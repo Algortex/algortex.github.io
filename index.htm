@@ -1,22 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my github page</title>
+    <script src="https://mattboldt.github.io/typed.js/lib/typed.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="type-wrap"><!-- add static words/sentences here (i.e. text that you don't want to be removed)-->
-      <h1 id="typed1" style="white-space:pre;" class="typed"></h1>
-  <p id="typed2" style="white-space:pre;" class="typed">
-  </p>
+    <div class="type-wrap center-screen"><!-- add static words/sentences here (i.e. text that you don't want to be removed)-->
+      <div><span id="typed1" style="white-space:pre;">umm, hi.</span>
+      <br />
+  <span id="typed2" style="white-space:pre;" class="typed">
+  </span></div>
 </div>
     <style type="text/css">
       <!--
+        body {
+          background-color: #dddddd !important;
+          font-family: 'Roboto', sans-serif !important;
+        }
+        .center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+        #typed1 {
+          font-size: 32pt;
+          font-weight: 600;
+        }
+        #typed2 {
+          font-size: 18pt;
+        }
 .typed-cursor{
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
+    font-size: 18pt;
 }
 
 @keyframes blink{
@@ -27,28 +52,12 @@
       -->
     </style>
     <script type="text/javascript">
-      <!--
-        	$("#typed1").typed({
-  		strings: ["umm, hi."],
-  		typeSpeed: 100,
-  		startDelay: 0,
-  		backSpeed: 60,
-  		backDelay: 2000,
-  		loop: true,
-  		cursorChar: "|",
-  		contentType: 'html'
+      let myTyped2 = new Typed("#typed2", {
+  		strings: ["redundant","this is my github page.","i'll add more stuff soon."],
+      typeSpeed: 100,
+      loop: true
   	});
-      $("#typed1").typed({
-  		strings: ["this is my github page.", "i'll add more stuff soon."],
-  		typeSpeed: 100,
-  		startDelay: 0,
-  		backSpeed: 60,
-  		backDelay: 2000,
-  		loop: true,
-  		cursorChar: "|",
-  		contentType: 'html'
-  	});
-      -->
-    </style>
-</body>
-      </html>
+    </script>
+    </body>
+    </html>
+  
